@@ -1,6 +1,14 @@
+"use client";
+
 import Image from "next/image";
+import { useRef, useState } from "react";
+import Keyboard, { KeyboardReactInterface } from "react-simple-keyboard";
+import "react-simple-keyboard/build/css/index.css";
 
 export default function Home() {
+  const [input, setInput] = useState("");
+  const keyboard = useRef<KeyboardReactInterface | null>(null);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -108,6 +116,23 @@ export default function Home() {
           </p>
         </a>
       </div>
+
+      <input className="text-black" value={input} readOnly />
+      <Keyboard
+        keyboardRef={(r) => (keyboard.current = r)}
+        layout={{
+          default: ["1 2 3 4 5 6 7 8 9 0", "{bksp} {enter}"],
+        }}
+        display={{ "{bksp}": "１もじもどる", "{enter}": "こたえあわせ" }}
+        theme="hg-theme-default text-black"
+        onChange={setInput}
+        onKeyPress={(button) => {
+          if (button === "{enter}") {
+            setInput("");
+            keyboard.current?.setInput("");
+          }
+        }}
+      />
     </main>
   );
 }

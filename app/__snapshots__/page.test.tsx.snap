@@ -154,6 +154,136 @@ exports[`renders correctly 1`] = `
         </p>
       </a>
     </div>
+    <input
+      class="text-black"
+      readonly=""
+      value=""
+    />
+    <div
+      class="react-simple-keyboard simple-keyboard hg-theme-default text-black hg-layout-default"
+      data-skinstance="reactSimpleKeyboard"
+    >
+      <div
+        class="hg-rows"
+      >
+        <div
+          class="hg-row"
+        >
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="1"
+            data-skbtnuid="default-r0b0"
+          >
+            <span>
+              1
+            </span>
+          </div>
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="2"
+            data-skbtnuid="default-r0b1"
+          >
+            <span>
+              2
+            </span>
+          </div>
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="3"
+            data-skbtnuid="default-r0b2"
+          >
+            <span>
+              3
+            </span>
+          </div>
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="4"
+            data-skbtnuid="default-r0b3"
+          >
+            <span>
+              4
+            </span>
+          </div>
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="5"
+            data-skbtnuid="default-r0b4"
+          >
+            <span>
+              5
+            </span>
+          </div>
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="6"
+            data-skbtnuid="default-r0b5"
+          >
+            <span>
+              6
+            </span>
+          </div>
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="7"
+            data-skbtnuid="default-r0b6"
+          >
+            <span>
+              7
+            </span>
+          </div>
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="8"
+            data-skbtnuid="default-r0b7"
+          >
+            <span>
+              8
+            </span>
+          </div>
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="9"
+            data-skbtnuid="default-r0b8"
+          >
+            <span>
+              9
+            </span>
+          </div>
+          <div
+            class="hg-button hg-standardBtn"
+            data-skbtn="0"
+            data-skbtnuid="default-r0b9"
+          >
+            <span>
+              0
+            </span>
+          </div>
+        </div>
+        <div
+          class="hg-row"
+        >
+          <div
+            class="hg-button hg-functionBtn hg-button-bksp"
+            data-skbtn="{bksp}"
+            data-skbtnuid="default-r1b0"
+          >
+            <span>
+              １もじもどる
+            </span>
+          </div>
+          <div
+            class="hg-button hg-functionBtn hg-button-enter"
+            data-skbtn="{enter}"
+            data-skbtnuid="default-r1b1"
+          >
+            <span>
+              こたえあわせ
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </div>
 `;
